@@ -1,6 +1,6 @@
 # Low Tide
 
-A mobile-friendly bilging puzzle game with a paper-and-ink harbor aesthetic. Choose Lily, Alex, Steven, or Hana, complete jobs, earn coins and experience, and improve your pumps and hull seals.
+A mobile-friendly bilging puzzle game with a paper-and-ink harbor aesthetic. Choose one of ten harbor animals, name your character, complete jobs, earn coins and experience, and improve your pumps and hull seals. Lily, Alex, Steven, and Hana keep their original specialties.
 
 ## Run locally
 
@@ -20,13 +20,14 @@ Open http://localhost:8000 in a browser. Serve over HTTP rather than opening ind
 - `dist/engine.mjs`: matching, refills, and special-piece mechanics
 - `dist/pieces.mjs`: pattern and special-piece artwork
 - `dist/rpg.css`: responsive interface and full-screen puzzle layout
-- `dist/assets/ink-crew.webp` and `dist/assets/ink-scenes.webp`: current artwork
+- `dist/assets/ink-crew.webp` and `dist/assets/ink-scenes.webp`: harbor scenery and earlier portraits
+- `dist/assets/crew/`: character-select portraits
 
 Other styles, modules, and images in `dist/` are retained from earlier prototypes; the current entry point does not load them.
 
 ## Playing
 
-Swap horizontally adjacent pieces to match three or more colors across or down. Clears advance the job and remove water. Complete the work target before flooding. Successful jobs earn coins and XP; equipment upgrades and character specialties change how you handle the water. The emergency pump recharges on swaps that clear pieces.
+Swap horizontally adjacent pieces to match three or more colors across or down. Clears advance the job and remove water. Complete the work target before flooding. Successful jobs earn coins and XP; equipment upgrades and character specialties change how you handle the water. The name you give your character is saved with the rest of your progress. The emergency pump recharges on swaps that clear pieces.
 
 Progress is stored in browser localStorage on the current device. Job progress pauses when the game is hidden. The puzzle fills the browser viewport; hiding browser controls depends on Fullscreen API support.
 
