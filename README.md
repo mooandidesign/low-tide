@@ -12,6 +12,12 @@ python3 -m http.server 8000 --directory dist
 
 Open http://localhost:8000 in a browser. Serve over HTTP rather than opening index.html directly because the game uses JavaScript modules.
 
+## iPhone app
+
+`ios/LowTide.xcodeproj` is a portrait iPhone shell (iOS 16 or later). It copies `dist/` into the app and shows it in a `WKWebView`. The page is loaded from the bundle at `lowtide://localhost/index.html`, not from the network, so module imports and the webp artwork resolve offline. Progress stays in the web view’s localStorage under `low-tide-guild-v1`.
+
+Open the project in Xcode 15 or later, choose an iPhone simulator, and run the Low Tide scheme. If signing blocks the run, select your Personal Team on the Low Tide target. A paid developer account is only needed for a physical device.
+
 ## Current game files
 
 - `dist/index.html`: application structure
