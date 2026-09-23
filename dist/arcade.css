@@ -63,13 +63,15 @@ dialog::backdrop{background:#1a100edc}
 @media(orientation:landscape) and (max-height:550px){#play{grid-template-columns:150px minmax(0,1fr) 150px;grid-template-rows:minmax(0,1fr);gap:0}.play-area{grid-column:2;grid-row:1;height:100%}.play-head{grid-column:1;grid-row:1;height:100%;display:flex;flex-direction:column;justify-content:start;align-items:stretch;padding:12px;border-right:3px solid #ad7852;border-bottom:0}.play-head strong{white-space:normal}.play-meters{grid-column:3;grid-row:1;height:auto;display:block;align-self:start;padding:12px;border:0;background:#533526}.play-meters>div{margin-bottom:15px}.play-foot{grid-column:3;grid-row:1;align-self:end;display:block;height:auto;padding:12px;border:0}.play-foot button{margin-top:10px}}
 
 /* Numbered animal sheet for character selection. */
+@font-face{font-family:"Patrick Hand";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/patrick-hand-digits.woff2") format("woff2");unicode-range:U+0030-0039}
 .crew-sheet{background:#f2dcc4;border-radius:18px;padding:14px 8px 10px;box-shadow:inset 0 0 0 1px #e7d2b8}
 .crew-grid{--crew-scale:.4;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px 2px;align-items:stretch}
 button.crew-card{background:transparent;border:0;box-shadow:none;border-radius:12px;padding:2px 1px 0;min-height:0;gap:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;font-weight:400}
 button.crew-card:hover:not(:disabled){background:transparent}
 button.crew-card:hover:not(:disabled) .crew-fig{transform:translateY(-2px)}
 button.crew-card[aria-pressed=true]{background:transparent;border:0;box-shadow:none}
-button.crew-card[aria-pressed=true] .portrait{background:radial-gradient(ellipse at 50% 58%,#fffaf2 0%,#fff3e4 42%,transparent 70%)}
+button.crew-card[aria-pressed=true] .portrait{background:radial-gradient(ellipse at 50% 64%,#fffef8 0%,#ffe3b8 46%,transparent 74%)}
+button.crew-card[aria-pressed=true] .crew-fig{filter:drop-shadow(0 0 1px #fff) drop-shadow(0 8px 8px #d3925588)}
 button.crew-card:disabled{opacity:1;cursor:default}
 button.crew-card:disabled:not([aria-pressed=true]){opacity:.42}
 button.crew-card:focus-visible{outline:2px solid #168f95;outline-offset:2px}
@@ -78,7 +80,7 @@ button.crew-card:focus-visible{outline:2px solid #168f95;outline-offset:2px}
 .crew-fig{width:calc(var(--w) * var(--crew-scale) * 1px);height:auto;max-width:100%;display:block;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-drag:none}
 .profile .portrait{width:86px;height:112px;flex-shrink:0}
 .profile .crew-fig{width:auto;height:108px;max-width:86px}
-.crew-num{font-family:"Segoe Print","Bradley Hand","Comic Sans MS","Chalkboard SE",cursive;font-size:22px;line-height:1;color:#8d847b;margin-top:0;font-weight:400}
+.crew-num{font-family:"Patrick Hand","Segoe Print","Bradley Hand","Comic Sans MS","Chalkboard SE",cursive;font-size:28px;line-height:1;color:#7a726a;margin-top:-2px;font-weight:400;display:block}
 .crew-card:nth-child(odd) .crew-num{transform:rotate(-7deg)}
 .crew-card:nth-child(even) .crew-num{transform:rotate(6deg)}
 .crew-card[aria-pressed=true] .crew-num{color:#4e463f}
@@ -89,4 +91,4 @@ button.crew-card:focus-visible{outline:2px solid #168f95;outline-offset:2px}
 #sailor-name::placeholder{color:#3c2b24;opacity:1}
 #sailor-name:focus{outline:none;border-bottom-color:#168f95}
 @media(max-width:720px){.crew-grid{--crew-scale:.32}#sailor-name{font-size:24px}}
-@media(max-width:420px){.crew-grid{--crew-scale:.27}.crew-num{font-size:16px}.profile .portrait{width:70px;height:92px}.profile .crew-fig{height:88px;max-width:70px}.crew-perk{font-size:12px}}
+@media(max-width:420px){.crew-grid{--crew-scale:.27}.crew-num{font-size:22px}.profile .portrait{width:70px;height:92px}.profile .crew-fig{height:88px;max-width:70px}.crew-perk{font-size:12px}}
