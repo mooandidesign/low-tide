@@ -26,7 +26,7 @@ Other styles, modules, and images in `dist/` are retained from earlier prototype
 
 ## Playing
 
-Swap horizontally adjacent pieces to match three or more colors and patterns across or down. Clears advance the job and remove water. Complete the work target before flooding. Successful jobs earn coins and XP; equipment upgrades and character specialties change how you handle the water. The emergency pump recharges on swaps that clear pieces.
+Swap horizontally adjacent pieces to match three or more colors across or down. Clears advance the job and remove water. Complete the work target before flooding. Successful jobs earn coins and XP; equipment upgrades and character specialties change how you handle the water. The emergency pump recharges on swaps that clear pieces.
 
 Progress is stored in browser localStorage on the current device. Job progress pauses when the game is hidden. The puzzle fills the browser viewport; hiding browser controls depends on Fullscreen API support.
 
