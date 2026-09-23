@@ -1,14 +1,14 @@
 export const CREW={
-lily:{name:'Lily',role:'Pump specialist',perk:'Clears remove 15% more water.',specialty:'pump',num:1,w:186,h:288},
-steven:{name:'Steven',role:'Shipwright',perk:'Water enters 15% more slowly.',specialty:'seal',num:2,w:169,h:226},
-hana:{name:'Hana',role:'Tide keeper',perk:'Emergency pump recharges in 9 clearing swaps, instead of 12.',specialty:'tide',num:3,w:195,h:284},
-pip:{name:'Pip',role:'Pump specialist',perk:'Clears remove 15% more water.',specialty:'pump',num:4,w:222,h:266},
-alex:{name:'Alex',role:'Pattern reader',perk:'Simultaneous combos do 25% more work.',specialty:'combo',num:5,w:139,h:307},
-wool:{name:'Woolly',role:'Pattern reader',perk:'Simultaneous combos do 25% more work.',specialty:'combo',num:6,w:165,h:243},
-moss:{name:'Moss',role:'Shipwright',perk:'Water enters 15% more slowly.',specialty:'seal',num:7,w:188,h:247},
-cappy:{name:'Cappy',role:'Tide keeper',perk:'Emergency pump recharges in 9 clearing swaps, instead of 12.',specialty:'tide',num:8,w:188,h:254},
-otto:{name:'Otto',role:'Shipwright',perk:'Water enters 15% more slowly.',specialty:'seal',num:9,w:165,h:272},
-patch:{name:'Patch',role:'Pump specialist',perk:'Clears remove 15% more water.',specialty:'pump',num:10,w:137,h:239}
+lily:{name:'Lily',role:'Pump specialist',perk:'Clears remove 15% more water.',specialty:'pump',num:1,w:177,h:300},
+steven:{name:'Steven',role:'Shipwright',perk:'Water enters 15% more slowly.',specialty:'seal',num:2,w:226,h:300},
+hana:{name:'Hana',role:'Tide keeper',perk:'Emergency pump recharges in 9 clearing swaps, instead of 12.',specialty:'tide',num:3,w:231,h:300},
+pip:{name:'Pip',role:'Pump specialist',perk:'Clears remove 15% more water.',specialty:'pump',num:4,w:211,h:300},
+alex:{name:'Alex',role:'Pattern reader',perk:'Simultaneous combos do 25% more work.',specialty:'combo',num:5,w:126,h:300},
+wool:{name:'Woolly',role:'Pattern reader',perk:'Simultaneous combos do 25% more work.',specialty:'combo',num:6,w:196,h:300},
+moss:{name:'Moss',role:'Shipwright',perk:'Water enters 15% more slowly.',specialty:'seal',num:7,w:168,h:300},
+cappy:{name:'Cappy',role:'Tide keeper',perk:'Emergency pump recharges in 9 clearing swaps, instead of 12.',specialty:'tide',num:8,w:201,h:300},
+otto:{name:'Otto',role:'Shipwright',perk:'Water enters 15% more slowly.',specialty:'seal',num:9,w:232,h:300},
+patch:{name:'Patch',role:'Pump specialist',perk:'Clears remove 15% more water.',specialty:'pump',num:10,w:176,h:300}
 };
 export const JOBS=[{id:'harbor',name:'Harbor skiff',desc:'Clear a flooded fishing boat before the hold fills.',rank:1,target:130,leak:.30,coins:40,xp:120,tier:0},{id:'ferry',name:'Coastal ferry',desc:'Keep the pumps working through a longer crossing.',rank:2,target:230,leak:.40,coins:75,xp:200,tier:1},{id:'salvage',name:'Offshore salvage',desc:'A badly flooded wreck. More symbols and special pieces.',rank:4,target:340,leak:.50,coins:120,xp:300,tier:2}];
 export const rank=p=>1+Math.floor(p.xp/300);
