@@ -22,6 +22,7 @@ Open http://localhost:8000 in a browser. Serve over HTTP rather than opening ind
 - `dist/rpg.css`: responsive interface and full-screen puzzle layout
 - `dist/assets/ink-crew.webp` and `dist/assets/ink-scenes.webp`: harbor scenery and earlier portraits
 - `dist/assets/crew/`: character-select portraits
+- `dist/assets/fonts/`: handwritten digits for the crew sheet (Patrick Hand, SIL Open Font License)
 
 Other styles, modules, and images in `dist/` are retained from earlier prototypes; the current entry point does not load them.
 
